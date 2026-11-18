@@ -2635,6 +2635,131 @@ html {
   }
 }
 
+
+/* Syllabus Section - Black, White & Gold Dark Theme */
+.syllabus-section {
+  font-family: 'Noto Sans Sinhala', sans-serif;
+  background-color: #050505;
+  background-image: radial-gradient(circle at top, #1c1917 0%, #050505 75%);
+  color: #ffffff;
+  padding: 50px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.syllabus-container {
+  width: 100%;
+  max-width: 540px;
+  background: #0d0d0d;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 24px;
+  padding: 36px 20px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(212, 175, 55, 0.08);
+}
+
+/* Badge */
+.syl-badge {
+  display: inline-block;
+  background: rgba(212, 175, 55, 0.12);
+  color: #facc15;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 16px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* Title & Subtitle */
+.syl-title {
+  font-family: 'Abhaya Libre', 'Noto Sans Sinhala', serif;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+}
+
+.syl-subtitle {
+  font-size: 0.92rem;
+  color: #a3a3a3;
+  margin: 0 0 24px 0;
+}
+
+/* Syllabus List */
+.syl-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.syl-item {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #171717 0%, #111111 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 14px 16px;
+  gap: 14px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.syl-item:hover {
+  transform: translateX(4px);
+  border-color: rgba(212, 175, 55, 0.5);
+  background: #1a1814;
+}
+
+/* Special Highlight Item (Kavi & Chheda) */
+.highlight-item {
+  border-color: rgba(212, 175, 55, 0.4);
+  background: linear-gradient(90deg, #1f1a0d 0%, #11100a 100%);
+}
+
+.syl-check {
+  width: 28px;
+  height: 28px;
+  background: rgba(212, 175, 55, 0.15);
+  color: #facc15;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.syl-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f3f4f6;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 480px) {
+  .syllabus-container {
+    padding: 28px 14px;
+    border-radius: 20px;
+  }
+
+  .syl-title {
+    font-size: 1.65rem;
+  }
+
+  .syl-item {
+    padding: 12px 14px;
+  }
+
+  .syl-text {
+    font-size: 0.98rem;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -2728,6 +2853,59 @@ html {
       <div class="holi-badge"> විශේෂ අංගය</div>
       <h2 class="holi-title">අවසන DJ සංගීතය සමග හෝලි උත්සවය</h2>
       <p class="holi-note">(සම්මන්ත්‍රණයට සම්බන්ධ වන දරුවන්ට පමණි)</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="syllabus-section">
+  <div class="syllabus-container">
+    
+    <!-- Section Badge -->
+    <div class="syl-badge"> විෂය නිර්දේශ ආවරණය</div>
+    
+    <!-- Heading -->
+    <h2 class="syl-title">සම්මන්ත්‍රණයේදී ආවරණය වන විශේෂ කොටස්</h2>
+    <p class="syl-subtitle">විභාගයට නියච්චිතම ඉලක්කගත සාකච්ඡාව</p>
+
+    <!-- Syllabus Items List -->
+    <div class="syl-list">
+      
+      <div class="syl-item">
+        <span class="syl-check">✔</span>
+        <span class="syl-text">සැළලිහිණි සන්දේශය</span>
+      </div>
+
+      <div class="syl-item">
+        <span class="syl-check">✔</span>
+        <span class="syl-text">කහ පිටු තුළින් එන සියලු ම ප්‍රශ්න</span>
+      </div>
+
+      <div class="syl-item">
+        <span class="syl-check">✔</span>
+        <span class="syl-text">අවස්ථා සම්බන්ධ ගැටලු</span>
+      </div>
+
+      <div class="syl-item">
+        <span class="syl-check">✔</span>
+        <span class="syl-text">අනුමාන විචාර</span>
+      </div>
+
+      <div class="syl-item">
+        <span class="syl-check">✔</span>
+        <span class="syl-text">අනුමාන රචනා</span>
+      </div>
+
+      <div class="syl-item">
+        <span class="syl-check">✔</span>
+        <span class="syl-text">ප්‍රායෝගික ලේඛන</span>
+      </div>
+
+      <div class="syl-item highlight-item">
+        <span class="syl-check">⭐</span>
+        <span class="syl-text">අමාරු ඡේද හා කවි වල තේරුම්</span>
+      </div>
+
     </div>
 
   </div>
